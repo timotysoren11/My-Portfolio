@@ -1,0 +1,228 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Container that holds both sidebar and main content */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px;
+  background-color: #1c1c1c;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+.sidebar h1{
+  border: 2px solid white;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+.sidebar h1,h4{
+  text-align: center;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0 0 40px;
+}
+.sidebar ul li {
+  margin: 20px 0;
+  border-bottom: 2px solid wheat;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  color: #9b9be7;
+}
+
+/* Main content styling */
+.main-content {
+  margin-left: 230px; 
+  padding: 20px;
+  background-color: #2a2a2a;
+  width: calc(100% - 200px); 
+}
+
+h2 {
+  color: #ff4081;
+}
+
+.contact-section a {
+  color: #ff4081;
+}
+
+/* Add padding to each section */
+section {
+  margin: 20px 0 0 50px;
+  height: 90vh;
+  padding: 20px 10px 0 40px;
+  display: flex;
+}
+
+/* about -section */
+section .content{
+  width: 50%;
+}
+section .content h1{
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+}
+.content h1{
+  border-bottom: 2px solid white;
+
+}
+section .content p{
+  line-height: 30px;
+  padding-left: 20px;
+}
+section .img-container{
+  width: 50%;
+}
+section .img-container img{
+  height: 530px;
+  width: 465px;
+  box-shadow: rgba(175, 170, 170, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* work - section */
+section .project-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-1{
+  height: 200px;
+  width: 250px;
+  display: 1 1 30%;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.project-1 h2{
+  font-size: 20px;
+  color: white;
+}
+.project-1 img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/*skill- page */
+section .skill-container{
+  display: flex;
+  width: 100%;
+}
+
+.skill{
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+}
+.skill h2{
+  font-size: 30px;
+}
+.skill-img{
+  width: 50%;
+}
+.skill ul{
+  list-style-type: none;
+  line-height: 45px;
+  margin-left: -50px;
+}
+.skill li{
+  border-bottom: 5px solid white;
+}
+.skill-img img{
+  width: 100%;
+  height: 550px;
+}
+
+/*-----Contact Me -------- */
+section .contact-container{
+  width: 100%;
+  /* background-color: yellow; */
+  padding: 20px;
+}
+.contact-title{
+  text-align: center;
+}
+.contact-title h1{
+  font-size: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+textarea{
+  height: 100px;
+  width: 400px;
+  background-color: #1a1a1a;
+  outline: none;
+  color: white;
+  padding: 20px;
+}
+form button{
+  padding: 10px;
+  width: 110px;
+  font-weight: bold;
+}
+form button:hover{
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Header- Page */
+.header{
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.header-content{
+  padding: 25px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.header-content h1{
+  font-size: 40px;
+}
+.header-content a{
+  text-decoration: none;
+}
+.header-content img{
+  height: 360px;
+  width: 600px;
+  
+}
