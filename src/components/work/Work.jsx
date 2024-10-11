@@ -1,44 +1,46 @@
 // src/components/Work.js
 import React from 'react';
 
+import projectImg from '../../assets/project.jpg'
+
 const Work = () => {
 
   //creating objects for the project
   const projects = [
     {
       title: "Note App",
-      imgSrc: " ",
-      link: "#",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/ReactJs-Note-App",
       imgAlt: "project-img-1"
     },
     {
       title: "News Portal",
-      imgSrc: "",
-      link: "#",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/ReactJs-NewsPortal",
       imgAlt: "project-img-2"
     },
     {
-      title: "Project 3 Title",
-      imgSrc: "",
-      link: "#",
+      title: "Data Fetching",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/Binance-Market-data-fetching",
       imgAlt: "project-img-3"
     },
     {
-      title: "Project 4 Title",
-      imgSrc: "",
-      link: "#",
+      title: "Calculator",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/React-Calculator",
       imgAlt: "project-img-4"
     },
     {
-      title: "Project 5 Title",
-      imgSrc: "",
-      link: "#",
+      title: "Weather App",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/Weather-App-Reactjs",
       imgAlt: "project-img-5"
     },
     {
-      title: "Project 6 Title",
-      imgSrc: "",
-      link: "#",
+      title: "Landing Page",
+      imgSrc: projectImg,
+      link: "https://github.com/timotysoren11/Landing-Portfolio",
       imgAlt: "project-img-6"
     }
   ];
