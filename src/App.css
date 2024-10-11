@@ -113,19 +113,33 @@ section .project-container{
 .project-1{
   height: 200px;
   width: 250px;
-  display: 1 1 30%;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(240, 235, 235, 0.1);
   padding: 20px;
   text-align: center;
+}
+.project-1:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .project-1 h2{
   font-size: 20px;
   color: white;
 }
+.project-1 a{
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.project-1 a:hover{
+  color: white;
+}
 .project-1 img {
-  width: 100%; /* Make images responsive */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%; 
+  height: 120px;
+  margin-left: 25px;
+  box-shadow: 0 2px 8px rgba(252, 248, 248, 0.541);
 }
 
 /*skill- page */
@@ -151,7 +165,12 @@ section .skill-container{
   margin-left: -50px;
 }
 .skill li{
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #615f5f;;
+  color: #615f5f;
+}
+.skill li:hover{
+  color: #1a1a1a;
+  font-weight: bold;
 }
 .skill-img img{
   width: 100%;
