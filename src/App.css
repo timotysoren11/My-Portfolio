@@ -245,6 +245,18 @@ form button:hover{
   width: 600px;
   
 }
+.social-media{
+  position: relative;
+  top: 40px;
+}
+.social-media ul{
+  display: flex;
+  gap: 100px;
+  list-style-type: none;
+}
+.social-media a:hover{
+  color: white;
+}
 
 
 /* -------------------------Mobile Devices (Portrait and Landscape) -----------------------*/
