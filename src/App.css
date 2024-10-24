@@ -368,7 +368,7 @@ form button:hover{
   .header-content h1 {
     font-size: 28px;
   }
-  .social-media{
+  section .social-media{
     position: relative;
     top: 20px;
   }
