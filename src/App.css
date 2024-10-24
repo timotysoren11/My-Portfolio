@@ -247,9 +247,14 @@ form button:hover{
 }
 
 
-/* Mobile Devices (Portrait and Landscape) */
+/* -------------------------Mobile Devices (Portrait and Landscape) -----------------------*/
 @media (max-width: 767px) {
-   
+  
+  .app-container {
+    flex-direction: column;
+  }
+
+  /* Sidebar styling*/
   .sidebar {
     position: relative;
     width: 100%;
@@ -258,10 +263,10 @@ form button:hover{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
 
-  /* sidebar content */
+  /* Adjusting sidebar content */
   .sidebar h1 {
     margin-left: 0;
     margin-bottom: 10px;
@@ -285,15 +290,15 @@ form button:hover{
     font-size: 16px;
   }
 
-  /* Main content */
+  /* Main content below the sidebar*/
   .main-content {
-    margin-left: 0;
-    width: 100%;
+    margin-left: 0; 
+    width: 100%; 
     padding: 10px;
     background-color: #1a1a1a;
   }
 
-  /* Stack sections vertically */
+  /* sections vertically */
   section {
     flex-direction: column;
     height: auto;
@@ -301,44 +306,56 @@ form button:hover{
     padding: 10px;
   }
 
-  /* Content and image container*/
+  /* Content and image containers */
   section .content,
   section .img-container,
   section .skill-container {
     width: 100%;
   }
 
-  /* images responsive */
-  section .img-container img,
+  /* Make images responsive */
+
   .header-content img,
   .skill-img img {
     width: 100%;
     height: auto;
     box-shadow: none;
   }
-  .skill-img{
+  section .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  section .img-container img{
+    width: 60%;
+    height: 170px;
+  }
+  section .content p{
+    padding-right: 10px;
+  }
+
+  .skill-img {
     display: none;
   }
 
-  /* project cards */
+  /* Project cards */
   .project-1 {
     width: 100%;
     margin: 10px 0;
   }
 
-  /* skill sections */
+  /* Skill section  */
   .skill {
     width: 100%;
     margin-top: 20px;
   }
 
-  /* form elements */
+  /* Form elements */
   textarea {
     width: 100%;
     max-width: 100%;
   }
 
-  /* Header  */
+  /* Header styling */
   .header {
     height: auto;
   }
@@ -351,11 +368,30 @@ form button:hover{
   .header-content h1 {
     font-size: 28px;
   }
-
+  .social-media{
+    position: relative;
+    top: 20px;
+  }
+  .social-media ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+  }
+  .social-media a:hover{
+    color: white;
+  }
   .header-content img {
     width: 100%;
     height: auto;
   }
+  
+  section .contact-container, section .contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 /* Tablet Devices */
